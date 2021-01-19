@@ -22,7 +22,7 @@ body {
 }
 
 .form {
-  width: clamp(auto, 80%, 500px);
+  width: 50%;
   margin: 100px 0;
   display: grid;
   place-items: center;
@@ -39,6 +39,12 @@ body {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .form {
+    width: 90%;
+  }
 }
 
 .form .name,
@@ -83,6 +89,7 @@ body {
 
 .resumed {
   display: grid;
+  width: 60%;
   background: #eee;
   margin: 100px 0;
   padding: 5vw;
@@ -97,6 +104,12 @@ body {
   -moz-transition: all 1.5s;
   -ms-transition: all 1.5s;
   -o-transition: all 1.5s;
+}
+
+@media (max-width: 600px) {
+  .resumed {
+    width: 90%;
+  }
 }
 
 .resumed .resume-image img {
@@ -148,6 +161,15 @@ body {
 .resumed .resume-content .sign {
   text-transform: capitalize;
   font-style: italic;
+}
+
+.resumed .download {
+  padding: 2vw;
+  background: tomato;
+  justify-self: start;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .hidden {

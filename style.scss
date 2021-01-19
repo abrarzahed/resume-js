@@ -5,6 +5,7 @@
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
+
 @mixin trans {
     transition: all 1.5s;
     -webkit-transition: all 1.5s;
@@ -27,6 +28,7 @@ body {
     font-size: 62.5%;
     line-height: 1.5;
 }
+
 .title {
     text-align: center;
     font-size: 8vmin;
@@ -35,8 +37,9 @@ body {
     letter-spacing: 1.2px;
     font-weight: normal;
 }
+
 .form {
-    width: clamp(auto, 80%, 500px);
+    width: 50%;
     margin: 100px 0;
     display: grid;
     place-items: center;
@@ -45,13 +48,16 @@ body {
     padding: 20px;
     @include trans;
     @include bora;
+    @media (max-width: 600px) {
+        width: 90%;
+    }
 
 
     .name,
     .email,
     .number,
     .date,
-    .message{
+    .message {
         width: 70%;
         padding: 20px;
         font-size: 15px;
@@ -65,9 +71,9 @@ body {
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
         font-weight: 300;
-    
+
     }
-    
+
 
     .photo {
         justify-self: start;
@@ -98,6 +104,7 @@ body {
 .resumed {
     display: grid;
     // width: min(90%, 600px);
+    width: 60%;
     background: #eee;
     margin: 100px 0;
     padding: 5vw;
@@ -105,11 +112,14 @@ body {
     @include bora;
     @include trans;
 
+    @media (max-width: 600px) {
+        width: 90%;
+    }
 
 
 
     .resume-image {
-        img{
+        img {
             width: 100px;
             height: 100px;
             display: block;
@@ -119,40 +129,55 @@ body {
             -moz-border-radius: 50%;
             -ms-border-radius: 50%;
             -o-border-radius: 50%;
-}
+        }
     }
-    .resume-content{
+
+    .resume-content {
         display: grid;
         grid-gap: 1rem;
 
-        p{
+        p {
             font-size: 16px;
             color: #333;
         }
-        h2{
+
+        h2 {
             font-size: 5vmin;
             color: #111;
             font-weight: normal;
         }
-        .resume-date{
+
+        .resume-date {
             font-size: 14px;
         }
-        .resume-name{
+
+        .resume-name {
             font-size: 28px;
             text-transform: capitalize;
             font-weight: normal;
         }
-        .resume-email{
+
+        .resume-email {
             font-size: 16px;
         }
-        .resume-message{
+
+        .resume-message {
             font-weight: bold;
         }
-        .sign{
+
+        .sign {
             text-transform: capitalize;
             font-style: italic;
         }
-        
+
+    }
+    .download{
+        padding: 2vw;
+        background: tomato;
+        justify-self: start;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
     }
 }
 

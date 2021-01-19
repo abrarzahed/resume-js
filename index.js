@@ -17,6 +17,7 @@ const resumeNumber = document.querySelector('.resume-number')
 const resumeMessage = document.querySelector('.resume-message')
 // const resumeImage = document.querySelector('.rimg')
 const sign = document.querySelector('.sign');
+const download = document.querySelector('.download');
 
 createResume.addEventListener('click', function () {
     form.classList.add('hidden');
@@ -29,4 +30,9 @@ createResume.addEventListener('click', function () {
     resumeMessage.textContent = message.value;
     // resumeImage.src = photo.value;
 
+});
+
+download.addEventListener('click',()=>{
+    download.classList.add('hidden');
+    window.print();
 })
