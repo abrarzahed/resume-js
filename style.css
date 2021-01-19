@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  font-family: sans-serif;
+  font-size: 62.5%;
+  line-height: 1.5;
+}
+
+.title {
+  text-align: center;
+  font-size: 8vmin;
+  color: tomato;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: normal;
+}
+
+.form {
+  width: 60%;
+  margin: 100px 0;
+  display: grid;
+  place-items: center;
+  grid-gap: 1.5rem;
+  background: #666;
+  padding: 20px;
+  transition: all 1.5s;
+  -webkit-transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  -ms-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.form .name,
+.form .email,
+.form .number,
+.form .date,
+.form .message {
+  width: 70%;
+  padding: 20px;
+  font-size: 20px;
+  font-family: sans-serif;
+  border: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-weight: 300;
+}
+
+.form .photo {
+  justify-self: start;
+  padding: 20px;
+  color: #fff;
+}
+
+.form .submit {
+  background: tomato;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.resumed {
+  display: grid;
+  width: 60%;
+  background: #eee;
+  margin: 100px 0;
+  padding: 5vw;
+  grid-gap: 30px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all 1.5s;
+  -webkit-transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  -ms-transition: all 1.5s;
+  -o-transition: all 1.5s;
+}
+
+.resumed .resume-image img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.resumed .resume-content {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.resumed .resume-content p {
+  font-size: 16px;
+  color: #333;
+}
+
+.resumed .resume-content h2 {
+  font-size: 5vmin;
+  color: #111;
+  font-weight: normal;
+}
+
+.resumed .resume-content .resume-date {
+  font-size: 14px;
+}
+
+.resumed .resume-content .resume-name {
+  font-size: 28px;
+  text-transform: capitalize;
+  font-weight: normal;
+}
+
+.resumed .resume-content .resume-email {
+  font-size: 16px;
+}
+
+.resumed .resume-content .resume-message {
+  font-weight: bold;
+}
+
+.resumed .resume-content .sign {
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+.hidden {
+  display: none;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+}
+/*# sourceMappingURL=style.css.map */
