@@ -36,7 +36,7 @@ body {
     font-weight: normal;
 }
 .form {
-    width: 60%;
+    width: clamp(auto, 80%, 500px);
     margin: 100px 0;
     display: grid;
     place-items: center;
@@ -54,7 +54,7 @@ body {
     .message{
         width: 70%;
         padding: 20px;
-        font-size: 20px;
+        font-size: 15px;
         font-family: sans-serif;
         //text-transform: capitalize;
         border: none;
@@ -97,7 +97,7 @@ body {
 
 .resumed {
     display: grid;
-    width: 60%;
+    // width: min(90%, 600px);
     background: #eee;
     margin: 100px 0;
     padding: 5vw;

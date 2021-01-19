@@ -22,7 +22,7 @@ body {
 }
 
 .form {
-  width: 60%;
+  width: clamp(auto, 80%, 500px);
   margin: 100px 0;
   display: grid;
   place-items: center;
@@ -48,7 +48,7 @@ body {
 .form .message {
   width: 70%;
   padding: 20px;
-  font-size: 20px;
+  font-size: 15px;
   font-family: sans-serif;
   border: none;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
@@ -83,7 +83,6 @@ body {
 
 .resumed {
   display: grid;
-  width: 60%;
   background: #eee;
   margin: 100px 0;
   padding: 5vw;
